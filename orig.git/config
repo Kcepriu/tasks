@@ -1,0 +1,44 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:CodeGeneration-2020/cgs-team-camp.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "skostiuchenko/main"]
+	remote = origin
+	merge = refs/heads/skostiuchenko/main
+[branch "feature/skostiuchenko/crud-operations-backend"]
+	remote = origin
+	merge = refs/heads/feature/skostiuchenko/crud-operations-backend
+[branch "feature/skostiuchenko/task2-todo-frontend"]
+	remote = origin
+	merge = refs/heads/feature/skostiuchenko/task2-todo-frontend
+[branch "feature/skostiuchenko/task3-authorization-backend"]
+	remote = origin
+	merge = refs/heads/feature/skostiuchenko/task3-authorization-backend
+[branch "feature/skostiuchenko/task4-authorization-frontend"]
+	remote = origin
+	merge = refs/heads/feature/skostiuchenko/task4-authorization-frontend
+[branch "feature/skostiuchenko/task5-filters"]
+	remote = origin
+	merge = refs/heads/feature/skostiuchenko/task5-filters
+[branch "feature/ostukalo/pagination"]
+	remote = origin
+	merge = refs/heads/feature/ostukalo/pagination
+[branch "feature/skostiuchenko/task6-pagination"]
+	remote = origin
+	merge = refs/heads/feature/skostiuchenko/task6-pagination
+[branch "bug/skostiuchenko/task6-pagination"]
+	remote = origin
+	merge = refs/heads/bug/skostiuchenko/task6-pagination
+[branch "feature/vsulik/pagination"]
+	remote = origin
+	merge = refs/heads/feature/vsulik/pagination
+[branch "feature/dtrofymov/pagination"]
+	remote = origin
+	merge = refs/heads/feature/dtrofymov/pagination
