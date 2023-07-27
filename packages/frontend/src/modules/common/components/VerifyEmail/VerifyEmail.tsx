@@ -8,7 +8,7 @@ const VerifyEmail: FC = () => {
   const { isLoading, refetch } = useVerify();
   if (isLoading) return <MainLoader />;
 
-  refetch({ stale: true });
+  // refetch({ stale: true });
 
   return <Navigate to={APP_KEYS.ROUTER_KEYS.ROOT} />;
 };

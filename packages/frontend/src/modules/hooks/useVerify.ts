@@ -11,7 +11,7 @@ const useVerify = () => {
 
   const queryClient = useQueryClient();
   const { isLoading, isSuccess, isError, refetch } = useQuery(
-    QUERY_KEYS.USER,
+    `${QUERY_KEYS.USER}-${token}`,
     () => httpServises.verify(token || ''),
     {
       onSuccess: (user: IUser) => {
