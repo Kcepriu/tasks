@@ -5,7 +5,7 @@ import MainLoader from '../MainLoader/MainLoader.component';
 import { APP_KEYS } from '../../consts';
 
 const VerifyEmail: FC = () => {
-  const { isLoading, refetch } = useVerify();
+  const { isLoading } = useVerify();
   if (isLoading) return <MainLoader />;
 
   // refetch({ stale: true });
