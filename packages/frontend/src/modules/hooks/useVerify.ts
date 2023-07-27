@@ -10,7 +10,7 @@ const useVerify = () => {
   const { token } = useParams();
 
   const queryClient = useQueryClient();
-  const { isLoading, isSuccess, isError } = useQuery(
+  const { isLoading, isSuccess, isError, refetch } = useQuery(
     QUERY_KEYS.USER,
     () => httpServises.verify(token || ''),
     {
@@ -24,7 +24,7 @@ const useVerify = () => {
     }
   );
 
-  return { isSuccess, isLoading, isError };
+  return { isSuccess, isLoading, isError, refetch };
 };
 
 export default useVerify;

@@ -5,8 +5,10 @@ import MainLoader from '../MainLoader/MainLoader.component';
 import { APP_KEYS } from '../../consts';
 
 const VerifyEmail: FC = () => {
-  const { isLoading } = useVerify();
+  const { isLoading, refetch } = useVerify();
   if (isLoading) return <MainLoader />;
+
+  refetch({ stale: true });
 
   return <Navigate to={APP_KEYS.ROUTER_KEYS.ROOT} />;
 };
